@@ -1,0 +1,55 @@
+:root {
+  /* Primary Colors */
+  --primary: #6366F1;         /* Indigo 500 */
+  --primary-light: #818CF8;   /* Indigo 400 */
+  --primary-dark: #4F46E5;    /* Indigo 600 */
+
+  /* Background Colors */
+  --bg-primary: #0F0F23;
+  --bg-secondary: #1A1A2E;
+  --bg-tertiary: #16213E;
+  --bg-canvas: #0E1628;
+
+  /* Text Colors */
+  --text-primary: #F8FAFC;          /* Slate 50 */
+  --text-secondary: #CBD5E1;        /* Slate 300 */
+  --text-muted: #94A3B8;            /* Slate 400 */
+  --text-accent: #60A5FA;           /* Blue 400 */
+
+  /* UI Elements Colors */
+  --border: #334155;                /* Slate 700 */
+  --border-light: #475569;          /* Slate 600 */
+  --divider: #1E293B;               /* Slate 800 */
+
+  /* Component-Specific */
+  --sidebar: #1E1E3F;
+  --toolbar: #252545;
+  --property-panel: #1A1A35;
+  --component-palette: #2A2A4A;
+
+  /* Status Colors */
+  --success: #10B981;               /* Emerald 500 */
+  --warning: #F59E0B;               /* Amber 500 */
+  --error: #EF4444;                 /* Red 500 */
+  --info: #3B82F6;                  /* Blue 500 */
+
+  /* Interactive States */
+  --hover: #1E40AF;                 /* Blue 800 */
+  --active: #1D4ED8;                /* Blue 700 */
+  --focus: #2563EB;                 /* Blue 600 */
+  --disabled: #374151;              /* Gray 700 */
+
+  /* Drag & Drop Interface */
+  --drop-zone-active: #60A5FA;      /* Blue 400 */
+  --selected-border: #6366F1;       /* Indigo 500 */
+  --selected-bg: rgba(99, 102, 241, 0.1);
+  --grid-guidelines: rgba(51, 65, 85, 0.2); /* Slate 700, low opacity */
+
+  /* Code Export Area */
+  --code-bg: #1E293B;               /* Slate 800 */
+
+  /* Mobile Preview */
+  --device-frame: #374151;          /* Gray 700 */
+  --screen-bg: #111827;             /* Gray 900 */
+  --status-bar: #1F2937;            /* Gray 800 */
+}
