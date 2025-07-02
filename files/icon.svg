@@ -1,8 +1,0 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon container -->
-  <rect x="8" y="8" width="16" height="16" rx="2" stroke="#CBD5E1" stroke-width="1" fill="none" stroke-dasharray="2 2" opacity="0.5"/>
-  <!-- Star icon example -->
-  <path d="M16 10l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4l2-4z" stroke="#CBD5E1" stroke-width="1.5" fill="none"/>
-  <!-- Icon indicator -->
-  <circle cx="24" cy="8" r="1.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
-</svg>

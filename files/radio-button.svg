@@ -1,9 +1,0 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Radio button outer circle -->
-  <circle cx="16" cy="16" r="6" stroke="#CBD5E1" stroke-width="1.5" fill="none"/>
-  <!-- Selected inner dot -->
-  <circle cx="16" cy="16" r="3" fill="#CBD5E1"/>
-  <!-- Unselected state indicator -->
-  <circle cx="8" cy="24" r="3" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.4"/>
-  <text x="12" y="26" font-family="monospace" font-size="6" fill="#CBD5E1" opacity="0.6">unselected</text>
-</svg>
