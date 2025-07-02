@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dropdown trigger -->
+  <rect x="6" y="8" width="20" height="6" rx="2" stroke="#CBD5E1" stroke-width="1.5" fill="none"/>
+  <rect x="8" y="10" width="8" height="2" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <!-- Dropdown arrow -->
+  <path d="M22 10l2 2-2 2" stroke="#CBD5E1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Dropdown menu -->
+  <rect x="8" y="16" width="16" height="12" rx="2" stroke="#CBD5E1" stroke-width="1.5" fill="none"/>
+  <!-- Menu items -->
+  <rect x="10" y="18" width="12" height="2" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <rect x="10" y="21" width="12" height="2" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.6"/>
+  <rect x="10" y="24" width="12" height="2" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.6"/>
+</svg>

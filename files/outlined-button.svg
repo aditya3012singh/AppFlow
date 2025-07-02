@@ -1,0 +1,8 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outlined button -->
+  <rect x="6" y="12" width="20" height="8" rx="4" stroke="#CBD5E1" stroke-width="1.5" fill="none" stroke-dasharray="none"/>
+  <!-- Button text -->
+  <rect x="10" y="15" width="12" height="2" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <!-- Outline emphasis -->
+  <rect x="5" y="11" width="22" height="10" rx="5" stroke="#CBD5E1" stroke-width="0.5" fill="none" opacity="0.3"/>
+</svg>

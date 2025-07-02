@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tab row container -->
+  <rect x="4" y="8" width="24" height="6" rx="1" stroke="#CBD5E1" stroke-width="1.5" fill="none"/>
+  <!-- Tab dividers -->
+  <path d="M12 9v4M20 9v4" stroke="#CBD5E1" stroke-width="1" opacity="0.3"/>
+  <!-- Tab content -->
+  <rect x="5" y="10" width="6" height="1.5" rx="0.75" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.6"/>
+  <rect x="13" y="10" width="6" height="1.5" rx="0.75" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <rect x="21" y="10" width="6" height="1.5" rx="0.75" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Active tab indicator -->
+  <rect x="13" y="13" width="6" height="1" rx="0.5" fill="#CBD5E1"/>
+  <!-- Content area -->
+  <rect x="4" y="16" width="24" height="12" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none" stroke-dasharray="2 2" opacity="0.3"/>
+</svg>

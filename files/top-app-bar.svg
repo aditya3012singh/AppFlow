@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- App bar container -->
+  <rect x="4" y="6" width="24" height="6" rx="1" stroke="#CBD5E1" stroke-width="1.5" fill="none"/>
+  <!-- Navigation icon -->
+  <path d="M6 8h2M6 9.5h2M6 11h2" stroke="#CBD5E1" stroke-width="1" stroke-linecap="round"/>
+  <!-- Title -->
+  <rect x="10" y="8.5" width="8" height="1.5" rx="0.75" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <!-- Actions -->
+  <circle cx="22" cy="9" r="1.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <circle cx="26" cy="9" r="1.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <!-- Content area -->
+  <rect x="4" y="14" width="24" height="14" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none" stroke-dasharray="2 2" opacity="0.3"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple text representation -->
+  <rect x="6" y="10" width="16" height="3" rx="1.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <rect x="6" y="15" width="20" height="3" rx="1.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <rect x="6" y="20" width="12" height="3" rx="1.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <!-- Minimal indicator -->
+  <circle cx="28" cy="8" r="2" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <path d="M27 8h2M28 7v2" stroke="#CBD5E1" stroke-width="1" stroke-linecap="round"/>
+</svg>

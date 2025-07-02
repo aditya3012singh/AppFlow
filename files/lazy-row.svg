@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect x="4" y="8" width="24" height="16" rx="2" stroke="#CBD5E1" stroke-width="1.5" fill="none"/>
+  <!-- Visible items -->
+  <rect x="6" y="10" width="3" height="12" rx="0.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <rect x="10" y="10" width="3" height="12" rx="0.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <rect x="14" y="10" width="3" height="12" rx="0.5" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <!-- Fade indicators -->
+  <rect x="18" y="10" width="3" height="12" rx="0.5" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.6"/>
+  <rect x="22" y="10" width="3" height="12" rx="0.5" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.3"/>
+  <!-- Scroll indicator -->
+  <rect x="6" y="25" width="16" height="2" rx="1" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+  <rect x="6" y="25" width="6" height="2" rx="1" fill="#CBD5E1" opacity="0.6"/>
+  <!-- Infinity symbol -->
+  <path d="M16 4c-2 0-4 2-2 4s6 2 2 4-4 2-2 4" stroke="#CBD5E1" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
