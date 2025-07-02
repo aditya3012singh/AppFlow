@@ -1,6 +1,7 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 import { authMiddleware } from "../middlewares/authMiddleware.js";
+import { io } from "../index.js";
 
 const prisma = new PrismaClient();
 const router = express.Router();
@@ -19,6 +20,9 @@ router.post("/", authMiddleware, async (req, res) => {
         authorId: userId,
       },
     });
+      io.emit(`notification:${assignedUserId}`, {
+      message: "New task assigned!"
+    })
 
     res.status(201).json({ message: "Task created", task });
   } catch (err) {
