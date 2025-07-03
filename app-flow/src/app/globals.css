@@ -1,107 +1,102 @@
 @import "../styles/variables.css";
+@import "tailwindcss";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@theme {
+  /* Primary Colors */
+  --color-primary: #6366F1;
+  --color-primary-light: #818CF8;
+  --color-primary-dark: #4F46E5;
+  
+  /* Background Colors */
+  --color-bg-primary: #0F0F23;
+  --color-bg-secondary: #1A1A2E;
+  --color-bg-tertiary: #16213E;
+  --color-bg-canvas: #0E1628;
+
+  /* Text Colors */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #94A3B8;
+  --color-text-accent: #60A5FA;
+
+  /* UI Elements */
+  --color-border: #334155;
+  --color-border-light: #475569;
+  --color-divider: #1E293B;
+
+  /* Component-Specific */
+  --color-sidebar: #1E1E3F;
+  --color-toolbar: #252545;
+  --color-property-panel: #1A1A35;
+  --color-component-palette: #2A2A4A;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* Interactive States */
+  --color-hover: #1E40AF;
+  --color-active: #1D4ED8;
+  --color-focus: #2563EB;
+  --color-disabled: #374151;
 }
 
-:focus:not(:focus-visible) {
-  outline: none;
-}
 
-html{
-  height: 100%;
-  scroll-behavior: smooth;
-  background: var(--bg-primary);
-}
+/* CSS Custom Properties for Color Palette */
+:root {
+  /* Primary Colors */
+  --primary: #6366F1;
+  --primary-light: #818CF8;
+  --primary-dark: #4F46E5;
 
-body {
-  min-height: 100vh;
-  color: var(--text-primary);
-  background: var(--bg-primary);
-  font-family: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* Background Colors */
+  --bg-primary: #0F0F23;
+  --bg-secondary: #1A1A2E;
+  --bg-tertiary: #16213E;
+  --bg-canvas: #0E1628;
 
-/* 4. Typography */
+  /* Text Colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-accent: #60A5FA;
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.2;
-}
+  /* UI Elements Colors */
+  --border: #334155;
+  --border-light: #475569;
+  --divider: #1E293B;
 
-p {
-  color: var(--text-secondary);
-  margin-bottom: 1em;
-}
+  /* Component-Specific */
+  --sidebar: #1E1E3F;
+  --toolbar: #252545;
+  --property-panel: #1A1A35;
+  --component-palette: #2A2A4A;
 
-a {
-  color: var(--text-accent);
-  text-decoration: none;
-  transition: color 0.2s;
-}
+  /* Status Colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
 
-a:hover, a:focus {
-  color: var(--primary);
-  text-decoration: underline;
-}
+  /* Interactive States */
+  --hover: #1E40AF;
+  --active: #1D4ED8;
+  --focus: #2563EB;
+  --disabled: #374151;
 
-/* 5. Images */
-img, svg, video, canvas {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+  /* Drag & Drop Interface */
+  --drop-zone-active: #60A5FA;
+  --selected-border: #6366F1;
+  --selected-bg: rgba(99, 102, 241, 0.1);
+  --grid-guidelines: rgba(51, 65, 85, 0.2);
 
-/* 6. Buttons and form elements */
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  border: none;
-  outline: none;
-}
+  /* Code Export Area */
+  --code-bg: #1E293B;
 
-button {
-  cursor: pointer;
-  background: var(--color-primary);
-  color: var(--text-primary);
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  border: 1px solid var(--color-primary);
-  transition: background 0.2s, border-color 0.2s;
-}
-
-button:hover, button:focus {
-  background: var(--color-primary-light);
-  border-color: var(--color-primary-dark);
-}
-
-/* 7. Selection styling */
-::selection {
-  background: var(--color-primary);
-  color: var(--text-primary);
-}
-
-::-webkit-selection {
-  background: var(--color-primary);
-  color: var(--text-primary);
-}
-
-/* 8. Scrollbar styling for better UX */
-::-webkit-scrollbar {
-  width: 8px;
-  background: var(--bg-secondary);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--divider);
-  border-radius: 4px;
+  /* Mobile Preview */
+  --device-frame: #374151;
+  --screen-bg: #111827;
+  --status-bar: #1F2937;
 }

@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Compose Flow',
+  title: 'App Flow',
   description: 'Design Android layouts visually and export Jetpack Compose code.',
 };
 
