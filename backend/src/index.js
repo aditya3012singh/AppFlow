@@ -16,7 +16,8 @@ import labelRoutes from "./routes/labels.js";
 import fileRoutes from "./routes/files.js";
 import notificationRoutes from "./routes/notifications.js";
 import teamRoutes from "./routes/team.js";
-
+import oauthRoutes from "./routes/oauth.js";
+import "./config/passport.js";
 // Load .env variables
 dotenv.config();
 
@@ -47,6 +48,7 @@ io.on("connection", (socket) => {
 
 // Routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/auth/oauth", oauthRoutes);
 app.use("/api/v1/workspaces", workspaceRoutes);
 app.use("/api/v1/projects", projectRoutes);
 app.use("/api/v1/columns", columnRoutes);

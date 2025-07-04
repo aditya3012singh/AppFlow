@@ -1,60 +1,94 @@
 import { useState, useEffect, useCallback } from "react";
+import axios from "axios";
 
-type User = {
+// Define the user type
+export interface User {
   id: string;
+  name: string;
   email: string;
-  // Add more fields as needed
-};
+  createdAt: string;
+  role?: string;
+}
 
-export function useAuth() {
+// Define return type
+interface UseAuthHook {
+  user: User | null;
+  isLoggedIn: boolean;
+  loading: boolean;
+  signInUsingEmailPassword: (email: string, password: string) => Promise<void>;
+  signInUsingGoogle: () => void;
+  signInUsingGithub: () => void;
+  signOut: () => void;
+}
+
+export function useAuth(): UseAuthHook {
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  
   useEffect(() => {
-    // TODO: Logic to check if user is signed in, if yes return the User Object
-    // For now, assume user is not signed in
-    setUser(null);
-    setLoading(false);
+    const token = localStorage.getItem("token");
+    if (!token) {
+      setLoading(false);
+      return;
+    }
+
+    axios
+      .get("http://localhost:5000/api/v1/auth/me", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((res) => {
+        setUser(res.data.user);
+      })
+      .catch(() => {
+        localStorage.removeItem("token");
+        setUser(null);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
-  // Sign in with email/password
   const signInUsingEmailPassword = useCallback(async (email: string, password: string) => {
     setLoading(true);
-    // TODO: Implement sign in (call backend, etc.)
-    // On success:
-    // setUser({...});
-    setLoading(false);
+    try {
+      const res = await axios.post("http://localhost:5000/api/v1/auth/signin", { email, password });
+      const { jwt, user } = res.data;
+
+      localStorage.setItem("token", jwt);
+      setUser(user);
+    } catch (err) {
+      console.error("Login failed:", err);
+      throw err;
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
-  // Sign in with Google
-  const signInUsingGoogle = useCallback(async () => {
-    setLoading(true);
-    // TODO: Implement Google sign-in
-    // setUser({...});
-    setLoading(false);
+  const signInUsingGoogle = useCallback(() => {
+    const redirectUri = encodeURIComponent("http://localhost:55000/oauth/callback");
+    window.location.href = `http://localhost:5000/api/v1/auth/oauth/google?redirect_uri=${redirectUri}`;
   }, []);
 
-  // Sign in with GitHub
-  const signInUsingGithub = useCallback(async () => {
-    setLoading(true);
-    // TODO: Implement GitHub sign-in
-    // setUser({...});
-    setLoading(false);
+  const signInUsingGithub = useCallback(() => {
+    console.log("hello from callback")
+    const redirectUri = encodeURIComponent("http://localhost:55000/oauth/callback");
+    window.location.href = `http://localhost:5000/api/v1/auth/oauth/github?redirect_uri=${redirectUri}`;
   }, []);
 
-  // Sign out
+
+
+
   const signOut = useCallback(() => {
-    // TODO: Implement sign out
+    localStorage.removeItem("token");
     setUser(null);
   }, []);
 
-  const isLoggedIn = !!user;
-
   return {
-    user,           // user object or null
-    isLoggedIn,     // boolean
-    loading,        // boolean
+    user,
+    isLoggedIn: !!user,
+    loading,
     signInUsingEmailPassword,
     signInUsingGoogle,
     signInUsingGithub,
