@@ -25,7 +25,7 @@ Configure continuous integration and deployment for both frontend and backend. U
 Setup
 
 ## Status
-Todo
+Todo - Later
 
 ## Priority
 High

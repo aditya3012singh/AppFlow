@@ -28,7 +28,7 @@ Initialize a new Git repository for App Flow. Establish a monorepo structure to 
 Setup
 
 ## Status
-Todo
+Done
 
 ## Priority
 High

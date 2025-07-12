@@ -26,7 +26,7 @@ Design a complete, scalable relational database schema for App Flow. Include all
 Feature
 
 ## Status
-Todo
+Done
 
 ## Priority
 High
@@ -53,9 +53,9 @@ Adi
 - Document any decisions/assumptions.
 
 ## Subtasks
-- [ ] Identify all entities and their relationships.
-- [ ] Draft ERD diagram.
-- [ ] Write SQL or ORM models for each table/entity.
-- [ ] Define indices and foreign keys.
-- [ ] Document all tables/fields and relationships.
-- [ ] Review ERD and schema with stakeholders.
+- [x] Identify all entities and their relationships.
+- [x] Draft ERD diagram.
+- [x] Write SQL or ORM models for each table/entity.
+- [x] Define indices and foreign keys.
+- [x] Document all tables/fields and relationships.
+- [x] Review ERD and schema with stakeholders.

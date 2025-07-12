@@ -25,7 +25,7 @@ Develop a secure authentication system supporting:
 Feature
 
 ## Status
-Todo
+Done
 
 ## Priority
 High
@@ -54,16 +54,16 @@ Adi
 - Use a transactional email service (SendGrid, Resend) for OTP emails.
 
 ## Subtasks
-- [ ] Set up user/auth tables in DB.
-- [ ] Implement backend endpoints for:
+- [x] Set up user/auth tables in DB.
+- [x] Implement backend endpoints for:
     - Email/password signup/login
     - OTP email verification
     - Google OAuth
     - GitHub OAuth
     - Forgot/reset password
     - Logout
-- [ ] Implement frontend UI for all flows.
-- [ ] Integrate JWT or session cookies.
-- [ ] Set up email sending for OTP.
-- [ ] Validate forms and handle errors.
-- [ ] Write unit/integration tests.
+- [x] Implement frontend UI for all flows.
+- [x] Integrate JWT or session cookies.
+- [x] Set up email sending for OTP.
+- [x] Validate forms and handle errors.
+- [x] Write unit/integration tests.
