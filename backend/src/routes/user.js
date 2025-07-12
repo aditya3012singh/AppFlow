@@ -14,7 +14,10 @@ dotenv.config();
 const router = express.Router()
 
 const prisma=new PrismaClient()
-const redis=new Redis()
+const redis = new Redis(process.env.REDIS_URL);
+redis.on("error", (err) => {
+    console.error("Redis connection error:", err);
+});
 redis.ping().then(console.log)
 
 const transporter=nodemailer.createTransport({
