@@ -1,19 +1,22 @@
 'use client'
 
+
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname();
   const footerLinks = {
     Product: [
-      { name: 'Features', href: '#features' },
-      { name: 'Pricing', href: '#pricing' },
+      { name: 'Features', href: '/features' },
+      { name: 'Pricing', href: '/pricing' },
       { name: 'Changelog', href: '/changelog' },
-      { name: 'Roadmap', href: '/roadmap' }
+      { name: 'How it works', href: '/how-it-works' }
     ],
     Resources: [
       { name: 'Documentation', href: '/docs' },
-      { name: 'Blog', href: '#blog' },
+      { name: 'Blog', href: '/blog' },
       { name: 'Community', href: '/community' },
       { name: 'Support', href: '/support' }
     ],
@@ -85,16 +88,21 @@ export default function Footer() {
                 {category}
               </h3>
               <ul className="space-y-3">
-                {links.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="text-text-secondary hover:text-text-primary transition-colors duration-300"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
+                {links.map((link) => {
+                  const isActive = pathname === link.href;
+                  return (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className={`transition-colors duration-300 ${
+                          isActive ? 'text-primary font-semibold' : 'text-text-secondary hover:text-text-primary'
+                        }`}
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
